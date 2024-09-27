@@ -1,0 +1,178 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #1E1E1E;
+    color: #B98436;
+    line-height: 1.6;
+
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url(./assests/2096775.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  .gallery {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #f39c12;
+  }
+  
+  /* Video Container */
+  .video-wrapper {
+    width: 100%; /* Make the wrapper responsive */
+    max-width: 800px; /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Center the video on large screens */
+    padding: 1rem 0; /* Add some padding for better spacing */
+  }
+  
+  .video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Keep aspect ratio intact */
+  }
+  
+  .message {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: Noto Nastaliq Urdu;
+    line-height: 50px;
+  }
+  
+  .message h2 {
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    height: 40px;
+    text-align: center;
+    background-color: #333333de;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f39c12;
+  }
+  
+  /* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .hero {
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  
+    h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .overlay {
+      width: 100%; /* Increase the width for better fitting */
+      padding: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem; /* Decrease paragraph font size */
+    }
+  
+    .gallery h2 {
+      font-size: 1.5rem; /* Reduce heading size */
+    }
+  
+    .video-wrapper {
+      max-width: 100%; /* Ensure video stays within screen */
+    }
+  
+    .message {
+      padding: 1rem;
+      line-height: 40px; /* Adjust line height */
+    }
+  
+    footer {
+      height: 50px;
+      font-size: 0.9rem; /* Adjust footer text size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .overlay {
+      padding: 1rem;
+      width: 100%;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .gallery h2 {
+      font-size: 1.2rem;
+    }
+  
+    .video-wrapper {
+      width: 100%; /* Full width for mobile */
+    }
+  
+    .message {
+      padding: 1rem;
+      width: 100%;
+      line-height: 35px;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+  }
+  
